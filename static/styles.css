@@ -1,0 +1,234 @@
+/* Add your CSS styles here as from the previous example */
+.app-container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Other styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Tahoma, sans-serif, Arial, Helvetica, sans-serif;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.header{
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.ami{
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+  float: left;
+  padding-left: 20px ;
+}
+.imga {
+  display: block; 
+  margin: 0 auto; 
+  text-align: center;
+  height: 200px;
+  width: 200px; 
+}
+.top-row{
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.content2{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 0px;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 10px, rgba(0, 0, 0, 0.1) -5px 0px 10px;
+  
+}
+.bottom-row{
+  margin-bottom: 100px;
+}
+#zero{
+  padding-left: 10px;
+  font-weight: bold;
+  float: left;
+  font-size: 20px;
+  
+}
+#on{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: Verdana, Tahoma, sans-serif, Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+#two {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif, Arial, Helvetica, sans-serif;
+  color: #3366cc;
+}
+#three{
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#amin{
+  font-family: Verdana, Tahoma, sans-serif, Arial, Helvetica, sans-serif;
+}
+.middle-row {
+  flex-grow: 1;
+  display: flex;
+  margin-bottom: 20px;
+}
+.left-column, .right-column {
+  flex-grow: 1;
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 350px;
+  background-color: #fff;
+}
+.left-column {
+  margin-left: 15%;
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) -5px 5px 10px;
+}
+
+.right-column {
+  margin-right: 15%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 10px;
+  padding-right: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 10px;
+}
+textarea {
+  height: 250px;
+  width: 90%;
+  margin: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  resize: none; 
+  overflow-y: scroll;
+}
+textarea::-webkit-scrollbar {
+  display: none; 
+}
+.result2{
+  float: left;
+  padding-left: 15px;
+}
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-right: 5%;
+  float: right;
+  background-color: #3f71cd;
+  font-family: Verdana, Tahoma, sans-serif, Arial, Helvetica, sans-serif;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+button:hover {
+  background-color: #2d5eb8;
+}
+
+/*table*/
+.table-container {
+  border-radius: 5px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.ttrr td {
+  border: none;
+}
+
+/*footer*/
+.row{
+  flex-grow: 1;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.una{
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+.duwa, .tatlo{
+  width: 20%;
+}
+.apat, .lima{
+  flex-grow: 1;
+  width: 33%;
+  margin-left: 5%;
+}
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0;
+  font-size:15px;
+  line-height:24px;
+  color:#fff;
+}
+.text-justify{
+  text-align: justify;
+  
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#fff;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#fff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block;
+}

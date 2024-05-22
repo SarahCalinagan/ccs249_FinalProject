@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <img class="ami" src="{{ url_for('static', filename='logo.png') }}" alt="logo">
+        <p id="zero">EmoNalazer</p>
+     </div>
+      <div class="top-row">
+          <p id="on">Sentiment Analyzer</p>
+      </br>
+          <p id="two">Try out the sentiment analyzer to analize your text:</p>
+      </div>
+      <div class="middle-row">
+        <div class="left-column">
+          <div class="content">
+            <form action="/predict" method="post" class="input-container">
+              <!--check if it works for not being an input-->
+              <textarea placeholder="Enter text here..." name="text" id="text" required></textarea>
+              </br>
+              <p class="result2"> 
+                <span id="word">0</span> Words 
+              </p> 
+              <button type="submit">Predict</button>
+            </form>
+          </div>
+        </div>
+        <div class="right-column">
+          <p id="three">Result<p>
+          <hr>
+          <br>
+          <hr>
+        </div>
+      </div>
+      <div class="bottom-row">
+        
+        
+
+      </div>
+      
+      <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="una">
+            <h6>About</h6>
+            <p class="text-justify">
+              This project introduces a compact yet robust application that leverages Natural Language Processing (NLP) techniques. Integrating text prediction and sentiment analysis features, it employs various NLP methodologies including text preprocessing, tokenization, Part-of-Speech (POS) tagging, and sentiment analysis. Users can experience a comprehensive tool for textual data analysis, facilitating predictive capabilities and in-depth sentiment evaluation.
+            </p>
+          </div>
+
+          <div class="duwa">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="https://github.com/SarahCalinagan/ccs249_Final_Project">Github Repository</a></li>
+              <li><a href="https://www.python.org/doc/essays/blurb/">Python</a></li>
+              <li><a href="https://www.nltk.org/">NLTK</a></li>
+              <li><a href="https://www.ibm.com/topics/natural-language-processing">NLP</a></li>
+              <li><a href="https://www.ibm.com/topics/sentiment-analysis">Sentiment Analysis</a></li>
+            </ul>
+          </div>
+
+          <div class="tatlo">
+            <h6>Members</h6>
+            <ul class="footer-links">
+              <li><a href="mailto: sarahnicole.calinagan@wvsu.edu.ph">Sarah Nicole Calinagan</a></li>
+              <li><a href="mailto: kynegabriel.deleon@wvsu.edu.ph">Kyne Gabriel de Leon</a></li>
+              <li><a href="mailto: roan.jaagunap@wvsu.edu.ph">Roan Jagunap</a></li>
+              <li><a href="mailto: humphreyjohn.montalban@wvsu.edu.ph">Humphrey John Montalban</a></li>
+              <li><a href="mailto: maapril.suarnaba@wvsu.edu.ph">Ma. April Suarnaba</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+</footer>
+    </div>
+
+    <script> 
+      let text = document.getElementById('text'); 
+      let word = document.getElementById('word'); 
+  
+      text.addEventListener('input', function () { 
+          // count words 
+          let content = this.value; 
+  
+          // remove empty spaces from start and end 
+          content = content.trim(); 
+  
+          if (content === "") {
+              // If content is empty, set word count to 0
+              word.textContent = 0;
+          } else {
+              // split content into words 
+              let wordList = content.split(/\s+/); 
+  
+              // count words 
+              word.textContent = wordList.length; 
+          }
+      }); 
+      
+
+  </script> 
+   
+</body>
+</html>
